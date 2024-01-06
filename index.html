@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        #container{
+            width:100vw;
+            height: 100vh;
+            background-color: #AC87C5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box{
+            width: 330px;
+            height: 450px;
+            background-color: whitesmoke;
+            border-radius: 20px;
+            gap:15px;
+            display: flex;
+            flex-flow: column;
+            
+        }
+        #img img{
+            width: 330px;
+            height: 150px;
+            border-top-left-radius: 20px ;
+            border-top-right-radius: 20px ;
+        }
+        #para1{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        #para2{
+            width: 200px;
+            text-align: center;
+            font-size: 0.8rem;
+            align-self: center;
+        }
+        #box1{
+            width: 280px;
+            height:50px;
+            background-color: #8dd0d3;
+            border-radius: 10px;
+            display:flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-self: center;
+            align-items: center;
+            padding:0px 10px;
+        }
+        #box1 img{
+            width:100;
+            height:45px;
+        }
+        #box2{
+            width:150px;
+            gap:10px;
+            display:flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+        #button{
+            width: 280px;
+            height: 50px;
+            background-color: #33186B;
+            border-radius: 10px;
+            align-self:center;
+            color:aliceblue
+        }
+        #anchor1{
+            text-decoration: none;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <div id="img">
+                <img src="icon.jpg">
+            </div>
+            <p id="para1">Order Summary</p>
+            <p id="para2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sit velit aperiam consequatur adipisci repellendus!</p>
+            <div id="box1">
+                <div id="box2">
+                    <img src="music.png">
+                    <p>Annual Plan $99.9/year</p>
+                </div>
+                <div id="box3">
+                    <a href="#" id="anchor">Change</a>
+                </div>
+            </div>
+            <Button id="button">Proceed to Payment.</Button>
+            <a href="#" id="anchor1">Cancel Order</a>
+        </div>
+    </div>
+</body>
+</html>
